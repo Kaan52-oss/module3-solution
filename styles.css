@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .box {
+    position: relative;
+    border: 1px solid black;
+    padding: 30px 20px 20px 20px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .box-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffa;
+    border: 1px solid black;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  /* Özel renkler */
+  .box1 { background-color: #ffd1d1; }
+  .box1 .box-title { background-color: #ff9999; }
+  
+  .box2 { background-color: #d1ffd1; }
+  .box2 .box-title { background-color: #99ff99; }
+  
+  .box3 { background-color: #d1d1ff; }
+  .box3 .box-title { background-color: #9999ff; }
+  
+  /* Desktop view (992px and up) */
+  @media (min-width: 992px) {
+    .box {
+      float: left;
+      width: 31%;
+      margin: 1%;
+    }
+  }
+  
+  /* Tablet view (768px to 991px) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .box {
+      float: left;
+    }
+  
+    .box1, .box2 {
+      width: 48%;
+      margin: 1%;
+    }
+  
+    .box3 {
+      width: 98%;
+      margin: 1%;
+      clear: both;
+    }
+  }
+  
+  /* Mobile view (767px and down) */
+  @media (max-width: 767px) {
+    .box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
